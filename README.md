@@ -401,6 +401,11 @@ Thank you for helping us improve the repository!
 
 - **Issue Tracker**: If you have suggestions or questions, please open an issue in the repository.
 
+## Removal Requests
+
+If you want to request the removal of a tool or resource, please use [this template](https://github.com/webpro255/repo-name/issues/new?template=remove_request.md) to submit your request.
+
+
 
 
 ## License
