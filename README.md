@@ -129,6 +129,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   sudo /var/ossec/bin/ossec-control start
+  ```
+  ### 6. [Caido](https://github.com/caido/caido)
+- **Description**: Caido is an open-source tool designed for endpoint threat detection and analysis. It focuses on the detection of suspicious activities and indicators of compromise (IOCs) on endpoints by analyzing system behavior and network traffic. Caido helps security professionals understand and respond to potential threats in real-time.
+- **Use Cases**:
+  - **Threat Detection**: Identify and analyze suspicious activities and IOCs on endpoints.
+  - **Behavioral Analysis**: Monitor system and network behavior to detect anomalies and potential security incidents.
+  - **Incident Response**: Use Caido to gather and analyze data from endpoints during security incidents for a more informed response.
+- **Example**:
+  ```bash
+  caido --scan /path/to/endpoint
 
 ### Forensics
 ### 1. [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
