@@ -307,17 +307,8 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```
   ## Post-Exploitation and Red Teaming
 
-### 1. [Cobalt Strike (Aggressor Scripts)](https://github.com/rsmudge/Aggressor-Scripts)
-- **Description**: Cobalt Strike is a commercial, full-featured penetration testing tool that is extremely powerful and often used by advanced threat actors. However, its scripting capability, known as Aggressor Scripts, is what truly elevates its potential. Aggressor Scripts allow users to automate and customize Cobalt Strike’s behavior, making it a highly adaptable tool for red team operations, post-exploitation, and advanced threat emulation.
-- **Use Cases**:
-  - **Advanced Threat Emulation**: Simulate sophisticated adversary tactics, techniques, and procedures (TTPs) by scripting custom attack workflows.
-  - **Post-Exploitation Automation**: Automate complex post-exploitation tasks such as lateral movement, privilege escalation, and data exfiltration using Aggressor Scripts.
-  - **Red Team Operations**: Customize Cobalt Strike’s behavior to align with specific red team goals, creating a more effective and stealthy operation.
-- **Example**:
-  ```bash
-  AggressorScript ./scripts/custom_behavior.cna
-  ```
-  ### 2. [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+
+  ### 1. [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 - **Description**: The Metasploit Framework is one of the most powerful and well-known open-source penetration testing tools available. It provides a comprehensive platform for developing, testing, and executing exploits against various targets. Metasploit is highly modular, allowing users to integrate a wide range of payloads, exploits, and auxiliary modules, making it indispensable for both offensive and defensive security professionals.
 - **Use Cases**:
   - **Vulnerability Exploitation**: Use Metasploit to exploit known vulnerabilities in systems and applications, enabling you to test defenses and understand potential attack vectors.
@@ -327,7 +318,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   msfconsole
   ```
-  ### 3. [Empire](https://github.com/BC-SECURITY/Empire)
+  ### 2. [Empire](https://github.com/BC-SECURITY/Empire)
 - **Description**: Empire is a post-exploitation framework that offers a comprehensive suite of tools for offensive operations, particularly focused on PowerShell and Python-based agents. It supports a wide range of modules for privilege escalation, lateral movement, persistence, and data exfiltration, making it a highly versatile and stealthy tool for red teams and advanced threat emulation.
 - **Use Cases**:
   - **Stealthy Post-Exploitation**: Deploy and manage PowerShell and Python agents to conduct covert post-exploitation activities on compromised systems.
@@ -337,7 +328,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   ./empire
   ```
-### 4. [SilentTrinity](https://github.com/byt3bl33d3r/SILENTTRINITY)
+### 3. [SilentTrinity](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - **Description**: SilentTrinity is an open-source, multi-platform post-exploitation framework that uses IronPython for payload execution. It’s designed to bypass many traditional defenses by leveraging .NET-based execution methods. SilentTrinity is particularly effective for executing code in environments where traditional PowerShell-based tools might be detected or blocked, making it a stealthy choice for red teamers.
 - **Use Cases**:
   - **Stealthy Payload Execution**: Execute payloads using IronPython to bypass traditional security controls that detect or block PowerShell.
