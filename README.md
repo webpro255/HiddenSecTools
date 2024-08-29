@@ -403,7 +403,7 @@ Thank you for helping us improve the repository!
 
 ## Removal Requests
 
-If you want to request the removal of a tool or resource, please use [this template](https://github.com/webpro255/repo-name/issues/new?template=remove_request.md) to submit your request.
+If you want to request the removal of a tool or resource, please use [this template](https://github.com/webpro255/HiddenSecTools/issues/new?template=remove_request.md) to submit your request.
 
 
 
