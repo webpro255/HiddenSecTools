@@ -6,6 +6,14 @@
 
 **A Curated List of Lesser-Known but Effective Cybersecurity Tools**
 This repository is dedicated to uncovering and showcasing powerful cybersecurity tools that may not be widely known but are incredibly effective in various cybersecurity domains. Each tool is accompanied by a brief description, use cases, and examples to help you quickly understand and leverage these hidden gems in your security efforts.
+
+## Disclaimer
+
+The tools and resources provided in this repository are intended for educational purposes and ethical security testing only. Unauthorized use of these tools to attack systems or networks without prior permission from the owner is illegal and unethical. The repository owner does not take responsibility for any misuse or damage caused by the tools listed here.
+
+By using the tools in this repository, you agree to use them responsibly and in compliance with all applicable laws and regulations. These tools are provided "as is" without any warranty, and the repository owner is not liable for any consequences resulting from their use.
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
