@@ -1,4 +1,3 @@
-![Documentation Status](https://img.shields.io/badge/docs-complete-brightgreen)
 ![Community](https://img.shields.io/badge/community-engaged-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
