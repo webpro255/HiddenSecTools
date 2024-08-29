@@ -67,17 +67,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   sudo wifite
   ```
-  ### 5. [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
-- **Description**: CrackMapExec (CME) is a post-exploitation tool designed to help security professionals perform various tasks on Windows networks. It combines many features, including network reconnaissance, credential gathering, and command execution, making it a powerful tool for lateral movement and privilege escalation in a Windows environment. CME is often used by red teams to automate the discovery and exploitation of Active Directory environments.
-- **Use Cases**:
-  - **Lateral Movement**: Automate the process of moving laterally across a Windows network by leveraging existing credentials or exploiting vulnerabilities.
-  - **Credential Gathering**: Extract and test credentials against multiple services (e.g., SMB, WinRM, SSH) to identify potential weak points in a network.
-  - **Privilege Escalation**: Identify and exploit opportunities to escalate privileges within a Windows network, gaining further access and control.
-- **Example**:
-  ```bash
-  crackmapexec smb 192.168.1.0/24 -u admin -p password123
-  ```
-### 6. [Responder](https://github.com/lgandx/Responder)
+### 5. [Responder](https://github.com/lgandx/Responder)
 - **Description**: Responder is a powerful tool used for network reconnaissance and credential gathering by abusing various protocols such as LLMNR, NBT-NS, and MDNS in Windows environments. It’s particularly effective at capturing hashed credentials and relaying them in network-based attacks.
 - **Use Cases**:
   - **Credential Harvesting**: Capture hashed credentials from network traffic by spoofing services like LLMNR and NBT-NS.
