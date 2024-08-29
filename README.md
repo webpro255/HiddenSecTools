@@ -1,9 +1,8 @@
-# HiddenSecTools
 ![Documentation Status](https://img.shields.io/badge/docs-complete-brightgreen)
 ![Community](https://img.shields.io/badge/community-engaged-blue)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
+# HiddenSecTools
 **A Curated List of Lesser-Known but Effective Cybersecurity Tools**
 This repository is dedicated to uncovering and showcasing powerful cybersecurity tools that may not be widely known but are incredibly effective in various cybersecurity domains. Each tool is accompanied by a brief description, use cases, and examples to help you quickly understand and leverage these hidden gems in your security efforts.
 
