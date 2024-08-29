@@ -18,8 +18,9 @@ assignees: ''
 
 **Tool/Resource Name**
 Please specify the name of the tool or resource you are requesting to add.
+please specify the Link to the tool you would like added.
 
-**Reason for Removal**
+**Reason for Add**
 A clear and concise description of why the tool/resource should be added.
 
 **Additional Information**
