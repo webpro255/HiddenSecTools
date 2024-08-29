@@ -1,4 +1,9 @@
 # HiddenSecTools
+![Documentation Status](https://img.shields.io/badge/docs-complete-brightgreen)
+![Community](https://img.shields.io/badge/community-engaged-blue)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **A Curated List of Lesser-Known but Effective Cybersecurity Tools**
 This repository is dedicated to uncovering and showcasing powerful cybersecurity tools that may not be widely known but are incredibly effective in various cybersecurity domains. Each tool is accompanied by a brief description, use cases, and examples to help you quickly understand and leverage these hidden gems in your security efforts.
 ## Table of Contents
@@ -339,19 +344,64 @@ Whether you're looking for tools to strengthen network security, perform forensi
   python3 st.py --payload ironpython --target 192.168.1.100
 
 
-## How to Contribute
+# How to Contribute
 
-We welcome contributions from the community! If you know of a cybersecurity tool that is lesser-known but highly effective, feel free to contribute. Here’s how you can help:
+We welcome contributions from the community! If you know of a cybersecurity tool that is lesser-known but highly effective, we’d love to hear from you. Please follow these steps to contribute:
 
-1. **Fork the repository** to your own GitHub account.
-2. **Clone the repository** to your local machine.
-3. **Create a new branch** with your changes: `git checkout -b feature/new-tool`.
-4. **Add your tool** to the relevant category in the `README.md` file.
-5. **Commit your changes**: `git commit -m 'Add [Tool Name]'`.
-6. **Push to the branch**: `git push origin feature/new-tool`.
-7. **Open a pull request** with a brief description of your addition.
+## Steps to Contribute
 
-We will review your contribution and merge it if it meets our standards.
+1. **Fork the Repository**
+   - Click the "Fork" button at the top right of this page to create a copy of the repository in your own GitHub account.
+
+2. **Clone the Repository**
+   - Clone the forked repository to your local machine:
+     ```bash
+     git clone https://github.com/your-username/repo-name.git
+     ```
+
+3. **Create a New Branch**
+   - Create a new branch for your changes:
+     ```bash
+     git checkout -b feature/new-tool
+     ```
+
+4. **Add Your Tool**
+   - Add your tool to the relevant category in the `README.md` file. Follow the format:
+     ```markdown
+     - **[Tool Name]**: Brief description of the tool.
+       - **Use Cases**: Describe when and how to use this tool.
+       - **Example**: Provide an example of how to use the tool.
+     ```
+
+5. **Commit Your Changes**
+   - Commit your changes with a meaningful message:
+     ```bash
+     git commit -m 'Add [Tool Name] with brief description and example'
+     ```
+
+6. **Push to Your Branch**
+   - Push the changes to your branch on GitHub:
+     ```bash
+     git push origin feature/new-tool
+     ```
+
+7. **Open a Pull Request**
+   - Open a pull request from your branch to the `main` branch of the repository.
+   - Provide a brief description of your addition and any additional information that might be relevant.
+
+## Review Process
+
+- **Review**: We will review your pull request to ensure it meets our standards and is relevant to the repository.
+- **Feedback**: We may request additional information or modifications.
+- **Approval**: Once approved, we will merge your contribution into the repository.
+
+Thank you for helping us improve the repository!
+
+## Additional Information
+
+- **Issue Tracker**: If you have suggestions or questions, please open an issue in the repository.
+
+
 
 ## License
 
