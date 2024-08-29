@@ -206,7 +206,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   nikto -h http://example.com
-
+  ```
+  ### 4. [Gobuster](https://github.com/OJ/gobuster)
+- **Description**: Gobuster is a powerful tool used for brute-forcing URIs (directories and files) and DNS subdomains on web servers. It is written in Go, making it fast and efficient, and is a favorite among penetration testers for its ability to quickly identify hidden paths and subdomains.
+- **Use Cases**:
+  - **Directory and File Brute-Forcing**: Discover hidden directories and files on web servers by brute-forcing using a wordlist.
+  - **DNS Subdomain Brute-Forcing**: Enumerate DNS subdomains to find additional entry points into a target's infrastructure.
+  - **Virtual Host Brute-Forcing**: Identify virtual hosts that are configured on a web server.
+- **Example**:
+  ```bash
+  gobuster dir -u http://example.com -w /path/to/wordlist.txt
 ### Cloud Security
 ### 1. [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 - **Description**: ScoutSuite is an open-source multi-cloud security-auditing tool that allows security teams to assess their cloud environment's security posture. It supports major cloud providers, including AWS, Azure, and GCP, and provides a comprehensive report on security risks, misconfigurations, and best practices.
