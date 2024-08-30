@@ -407,12 +407,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ### 6. [Impacket](https://github.com/fortra/impacket)
 - **Description**: Impacket is a powerful suite of Python tools for interacting with network protocols, particularly in Windows environments. It includes tools for remote command execution, credential dumping, and network enumeration, making it invaluable for post-exploitation activities.
 - **Use Cases**:
+  - **Kerberoasting**: Use the `GetUserSPNs.py` tool to extract service principal names (SPNs) and their associated Kerberos ticket hashes from Active Directory for offline password cracking.
   - **Credential Dumping**: Extract password hashes from Active Directory using `getnpusers.py` for accounts with Kerberos pre-authentication disabled.
   - **Remote Command Execution**: Execute commands on remote Windows machines.
   - **Network Enumeration**: Enumerate network resources such as SMB shares and RPC services.
-- **Example**:
+- **Some Examples of Use**:
   ```bash
   python3 /path/to/impacket/examples/getnpusers.py domain/username -dc-ip target_dc_ip
+  ```
+  ```bash
+  python3 /path/to/impacket/examples/GetUserSPNs.py domain/username:password -dc-ip target_dc_ip
   ```
   ### Resources
      ### 1. [SecLists](https://github.com/danielmiessler/SecLists)
