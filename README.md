@@ -404,6 +404,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
   $ip = 'YOUR_IP';  // Replace with your IP address
   $port = YOUR_PORT;  // Replace with the port you want to listen on
   ```
+  ### 6. [Impacket](https://github.com/fortra/impacket)
+- **Description**: Impacket is a powerful suite of Python tools for interacting with network protocols, particularly in Windows environments. It includes tools for remote command execution, credential dumping, and network enumeration, making it invaluable for post-exploitation activities.
+- **Use Cases**:
+  - **Credential Dumping**: Extract password hashes from Active Directory using `getnpusers.py` for accounts with Kerberos pre-authentication disabled.
+  - **Remote Command Execution**: Execute commands on remote Windows machines.
+  - **Network Enumeration**: Enumerate network resources such as SMB shares and RPC services.
+- **Example**:
+  ```bash
+  python3 /path/to/impacket/examples/getnpusers.py domain/username -dc-ip target_dc_ip
+  ```
   ### Resources
      ### 1. [SecLists](https://github.com/danielmiessler/SecLists)
 - **Description**: SecLists is a curated collection of multiple types of lists used during security assessments. It includes wordlists for brute-forcing, payloads for fuzzing, web shell samples, usernames, passwords, and much more. SecLists is an invaluable resource for penetration testers and security researchers.
