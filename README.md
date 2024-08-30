@@ -395,7 +395,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
   $port = YOUR_PORT;  // Replace with the port you want to listen on
   ```
   ### Resources
-### 1. [SecLists](https://github.com/danielmiessler/SecLists)
+     ### 1. [SecLists](https://github.com/danielmiessler/SecLists)
 - **Description**: SecLists is a curated collection of multiple types of lists used during security assessments. It includes wordlists for brute-forcing, payloads for fuzzing, web shell samples, usernames, passwords, and much more. SecLists is an invaluable resource for penetration testers and security researchers.
 - **Use Cases**:
   - **Brute-Forcing**: Utilize SecLists' wordlists to brute-force login credentials, directories, files, and other aspects of web applications.
