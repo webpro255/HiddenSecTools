@@ -192,6 +192,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   bulk_extractor -o output_dir disk_image.dd
+  ```
+  ### 4. [Volatility](https://github.com/volatilityfoundation/volatility)
+- **Description**: Volatility is a leading memory forensics framework used to extract digital artifacts from RAM dumps. It helps investigators analyze system memory to uncover evidence of malware, unauthorized access, and other security incidents. Volatility supports a wide range of memory image formats and is essential for conducting thorough digital forensic investigations.
+- **Use Cases**:
+  - **Malware Analysis**: Identify and analyze malicious processes, injected code, and other indicators of compromise in memory dumps.
+  - **Incident Response**: Use Volatility to investigate the state of a system at the time of a security incident by examining its memory.
+  - **Forensics Investigation**: Extract detailed information about running processes, network connections, and other system activities from memory dumps.
+- **Example**:
+  ```bash
+  volatility -f memory_dump.raw --profile=Win7SP1x64 pslist
 
 ### Vulnerability Scanning
 ### 1. [GoPhish](https://github.com/gophish/gophish)
