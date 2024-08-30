@@ -161,6 +161,26 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   caido --capture --interface eth0 --output /path/to/capture.pcap
+  ```
+  ### 7. [chkrootkit](http://www.chkrootkit.org/)
+- **Description**: chkrootkit is a tool for detecting known rootkits on Unix-based systems. It scans system binaries for rootkit signatures and checks for signs of compromise, making it a valuable tool for system administrators to ensure the integrity of their systems.
+- **Use Cases**:
+  - **Rootkit Detection**: Scan your system to detect the presence of known rootkits and other malicious software.
+  - **System Integrity Verification**: Ensure that system binaries have not been tampered with by malicious actors.
+  - **Regular Security Audits**: Include chkrootkit in routine security checks to maintain a secure system environment.
+- **Example**:
+  ```bash
+  sudo chkrootkit
+  ```
+  ### 8. [rkhunter](https://sourceforge.net/projects/rkhunter/)
+- **Description**: Rootkit Hunter (rkhunter) is a Unix-based tool that scans for rootkits, backdoors, and possible local exploits. It compares the current state of the system with known rootkit signatures and checks for suspicious files and permissions.
+- **Use Cases**:
+  - **Rootkit and Backdoor Detection**: Detect potential rootkits, backdoors, and other malicious software on Unix-based systems.
+  - **Security Baseline Verification**: Ensure that the system's critical files have not been altered by comparing them against known signatures.
+  - **Automated Security Monitoring**: Integrate rkhunter into automated security monitoring and alerting systems.
+- **Example**:
+  ```bash
+  sudo rkhunter --check
 
 ### Forensics
 ### 1. [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
