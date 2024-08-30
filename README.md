@@ -88,8 +88,18 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   sudo responder -I eth0
-
-  
+  ```
+  ### 6. [n2n](https://github.com/ntop/n2n)
+- **Description**: n2n is an open-source peer-to-peer (P2P) VPN software that enables users to create secure, encrypted networks between devices over the internet. It allows users to connect to each other directly, bypassing the need for a centralized server, making it an excellent solution for creating secure private networks.
+- **Use Cases**:
+  - **Secure Remote Access**: Use n2n to create a secure, private network between remote devices, allowing access to resources as if they were on the same local network.
+  - **Bypass Network Restrictions**: Utilize n2n to bypass network restrictions and securely access resources across different networks.
+  - **IoT and Embedded Devices**: Connect IoT devices securely across different networks without exposing them to the public internet.
+- **Example**:
+  ```bash
+  sudo apt-get install n2n
+  edge -c community -a 10.0.0.1 -k mysecretkey -l supernode.example.com:port
+  ```
 
 ### Endpoint Security
 ### 1. [Osquery](https://github.com/osquery/osquery)
