@@ -414,15 +414,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
     ```bash
     hydra -L /path/to/SecLists/Usernames/top-usernames-shortlist.txt -P /path/to/SecLists/Passwords/rockyou.txt ssh://example.com
     ```
-    ### 2. [dorkScanner](https://github.com/madhavmehndiratta/dorkScanner)
-- **Description**: dorkScanner is a Python-based tool designed to automate the process of finding vulnerable web pages and sensitive information using Google Dorks. It simplifies the task of searching for exposed resources on the internet that could be exploited in security breaches.
-- **Use Cases**:
-  - **Information Gathering**: Use dorkScanner to identify exposed web pages, files, and directories that could be leveraged in a penetration test.
-  - **Vulnerability Discovery**: Discover potential security weaknesses by identifying sensitive information that is publicly accessible via search engines.
-  - **Red Teaming**: Incorporate dorkScanner into red team operations to simulate attacks and discover unsecured data that should be protected.
-- **Example**:
-  ```bash
-  python3 dorkScanner.py -q "site:example.com inurl:admin"
+    
   
 
 
