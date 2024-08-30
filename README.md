@@ -222,6 +222,16 @@ Whether you're looking for tools to strengthen network security, perform forensi
 - **Example**:
   ```bash
   gobuster dir -u http://example.com -w /path/to/wordlist.txt
+  ```
+  ### 5. [Nessus](https://www.tenable.com/products/nessus)
+- **Description**: Nessus is a powerful commercial vulnerability scanner developed by Tenable. It is widely used for vulnerability assessment and is known for its comprehensive scanning capabilities. While Nessus is not included in Kali Linux by default, it can be easily installed and is highly effective for identifying security vulnerabilities in systems and networks.
+- **Use Cases**:
+  - **Vulnerability Scanning**: Perform comprehensive vulnerability assessments on networks, systems, and applications.
+  - **Compliance Auditing**: Use Nessus to ensure that systems comply with security standards and regulations.
+  - **Penetration Testing**: Integrate Nessus into penetration testing workflows to identify potential security weaknesses.
+- **Example**:
+  ```bash
+  sudo systemctl start nessusd
 ### Cloud Security
 ### 1. [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 - **Description**: ScoutSuite is an open-source multi-cloud security-auditing tool that allows security teams to assess their cloud environment's security posture. It supports major cloud providers, including AWS, Azure, and GCP, and provides a comprehensive report on security risks, misconfigurations, and best practices.
