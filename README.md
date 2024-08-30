@@ -24,6 +24,7 @@ By using the tools in this repository, you agree to use them responsibly and in 
   - [Threat Intelligence](#threat-intelligence)
   - [Automation and Scripting](#automation-and-scripting)
   - [Post-Exploitation and Red Teaming](#Post-Exploitation-and-Red-Teaming)
+  - [Resources](#Resources)
 - [How to Contribute](#how-to-contribute)
 - [License](#license)
 
@@ -393,6 +394,36 @@ Whether you're looking for tools to strengthen network security, perform forensi
   $ip = 'YOUR_IP';  // Replace with your IP address
   $port = YOUR_PORT;  // Replace with the port you want to listen on
   ```
+  ### Resources
+### 1. [SecLists](https://github.com/danielmiessler/SecLists)
+- **Description**: SecLists is a curated collection of multiple types of lists used during security assessments. It includes wordlists for brute-forcing, payloads for fuzzing, web shell samples, usernames, passwords, and much more. SecLists is an invaluable resource for penetration testers and security researchers.
+- **Use Cases**:
+  - **Brute-Forcing**: Utilize SecLists' wordlists to brute-force login credentials, directories, files, and other aspects of web applications.
+  - **Fuzzing**: Leverage payloads from SecLists to test applications for vulnerabilities like SQL injection, XSS, and more.
+  - **Security Research**: Use SecLists as a comprehensive resource for common usernames, passwords, and other data needed for security testing.
+- **Example**:
+  ```bash
+  ffuf -u http://example.com/FUZZ -w /path/to/SecLists/Discovery/Web-Content/common.txt
+  ```
+- **Examples of Use**
+  - **Brute-Force Web Directories**:
+    ```bash
+    wfuzz -c -z file,/path/to/SecLists/Discovery/Web-Content/common.txt --hc 404 http://example.com/FUZZ
+    ```
+  - **Brute-Force SSH**:
+    ```bash
+    hydra -L /path/to/SecLists/Usernames/top-usernames-shortlist.txt -P /path/to/SecLists/Passwords/rockyou.txt ssh://example.com
+    ```
+    ### 2. [dorkScanner](https://github.com/madhavmehndiratta/dorkScanner)
+- **Description**: dorkScanner is a Python-based tool designed to automate the process of finding vulnerable web pages and sensitive information using Google Dorks. It simplifies the task of searching for exposed resources on the internet that could be exploited in security breaches.
+- **Use Cases**:
+  - **Information Gathering**: Use dorkScanner to identify exposed web pages, files, and directories that could be leveraged in a penetration test.
+  - **Vulnerability Discovery**: Discover potential security weaknesses by identifying sensitive information that is publicly accessible via search engines.
+  - **Red Teaming**: Incorporate dorkScanner into red team operations to simulate attacks and discover unsecured data that should be protected.
+- **Example**:
+  ```bash
+  python3 dorkScanner.py -q "site:example.com inurl:admin"
+  
 
 
 
