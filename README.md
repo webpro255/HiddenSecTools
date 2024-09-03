@@ -386,6 +386,18 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   trufflehog git https://github.com/example/repo.git
   ```
+  ### 4. [CyberChef](https://gchq.github.io/CyberChef/)
+- **Description**: CyberChef is a web-based tool offering a wide range of data manipulation and analysis operations. Known as the "Cyber Swiss Army Knife," it allows users to perform tasks such as encryption, encoding, decoding, data conversion, and more, all through an intuitive interface.
+- **Use Cases**:
+  - **Data Conversion**: Convert data between formats like Base64, hexadecimal, binary, and text.
+  - **Encryption and Decryption**: Encrypt or decrypt data using various algorithms, including AES, RSA, and others.
+  - **Data Analysis**: Analyze and manipulate data for forensic investigations or security research.
+- **Example**:
+  ```bash
+  git clone https://github.com/gchq/CyberChef.git
+  cd CyberChef
+  open CyberChef.html
+  ```
   ## Post-Exploitation and Red Teaming
 
 
