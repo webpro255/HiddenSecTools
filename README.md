@@ -203,17 +203,23 @@ Whether you're looking for tools to strengthen network security, perform forensi
   ```bash
   yara -r /path/to/ruleset.yar /path/to/scan_directory/
   ```
-  ### 3. [Bulk Extractor](https://github.com/simsong/bulk_extractor)
-- **Description**: Bulk Extractor is a powerful digital forensics tool that scans disk images, files, or directories and extracts useful information such as email addresses, URLs, credit card numbers, and other artifacts. It’s designed to be fast and efficient, making it a valuable tool for forensic investigations.
+### 3. Autopsy
+- **Description**: Autopsy is a comprehensive open-source digital forensics platform designed for analyzing hard drives, disk images, and other data storage media. Built on The Sleuth Kit (TSK), Autopsy features a user-friendly interface for conducting investigations, recovering files, and generating forensic reports.
 - **Use Cases**:
-  - **Artifact Extraction**: Extract specific types of data (e.g., emails, URLs) from large datasets or disk images for further analysis.
-  - **Forensic Analysis**: Quickly scan disk images to identify and extract relevant forensic artifacts.
-  - **Data Recovery**: Recover important data from damaged or corrupted files or disk images.
-- **Example**:
-  ```bash
-  bulk_extractor -o output_dir disk_image.dd
-  ```
-  ### 4. [Volatility](https://github.com/volatilityfoundation/volatility)
+  - **Disk Image Analysis**: Investigate disk images for deleted files, hidden data, and file system metadata.
+  - **Incident Response**: Analyze compromised systems to identify malicious files, traces of attacks, or unauthorized access.
+  - **Data Recovery**: Recover lost or deleted files from storage devices.
+    **Example**:
+```autopsy &```
+ ### 4. The Sleuth Kit (TSK)
+- **Description**: The Sleuth Kit is a suite of command-line tools for digital forensics that enables analysis of disk images and file systems. It supports multiple file systems and is ideal for metadata extraction and data recovery tasks.
+- **Use Cases**:
+  - **File System Analysis**: Explore NTFS, FAT, ext, and other file systems for hidden and deleted files.
+  - **Data Recovery**: Extract deleted files or carve data from unallocated disk space.
+  - **Timeline Analysis**: Create chronological timelines of system and file activity.
+    **Example**:
+    ```fls -r -o 63 disk_image.dd > output.txt```
+  ### 5. [Volatility](https://github.com/volatilityfoundation/volatility)
 - **Description**: Volatility is a leading memory forensics framework used to extract digital artifacts from RAM dumps. It helps investigators analyze system memory to uncover evidence of malware, unauthorized access, and other security incidents. Volatility supports a wide range of memory image formats and is essential for conducting thorough digital forensic investigations.
 - **Use Cases**:
   - **Malware Analysis**: Identify and analyze malicious processes, injected code, and other indicators of compromise in memory dumps.
@@ -221,7 +227,15 @@ Whether you're looking for tools to strengthen network security, perform forensi
   - **Forensics Investigation**: Extract detailed information about running processes, network connections, and other system activities from memory dumps.
 - **Example**:
   ```bash
-  volatility -f memory_dump.raw --profile=Win7SP1x64 pslist
+  volatility -f memory_dump.raw --profile=Win7SP1x64 pslist``` 
+ ### 6. FTK Imager
+- **Description**: FTK Imager is a forensic acquisition and imaging tool that allows investigators to preview, acquire, and analyze data from physical drives, logical partitions, or disk images. It supports the creation of forensically sound copies and offers the ability to recover and analyze data from damaged or corrupted drives.
+- **Use Cases**:
+- **Disk Imaging**: Create forensic images of drives or partitions in a variety of formats, such as E01 and raw (dd).
+- **Data Recovery**: Recover deleted or lost files from drives or disk images.
+- **Evidence Validation**: Generate and verify MD5 and SHA-1 hash values for evidentiary integrity.
+    **Example**:
+  ```./ftkimager source_drive destination_image.E01```
 
 ### Vulnerability Scanning
 ### 1. [GoPhish](https://github.com/gophish/gophish)
