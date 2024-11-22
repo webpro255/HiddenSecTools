@@ -235,7 +235,8 @@ This launches the Autopsy web-based GUI, where you can create cases and add evid
   - **Forensics Investigation**: Extract detailed information about running processes, network connections, and other system activities from memory dumps.
 - **Example**:
   ```bash
-  volatility -f memory_dump.raw --profile=Win7SP1x64 pslist``` 
+  volatility -f memory_dump.raw --profile=Win7SP1x64 pslist
+  ``` 
  ### 6. FTK Imager
 - **Description**: FTK Imager is a forensic acquisition and imaging tool that allows investigators to preview, acquire, and analyze data from physical drives, logical partitions, or disk images. It supports the creation of forensically sound copies and offers the ability to recover and analyze data from damaged or corrupted drives.
 - **Use Cases**:
