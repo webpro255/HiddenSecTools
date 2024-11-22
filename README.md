@@ -211,7 +211,8 @@ Whether you're looking for tools to strengthen network security, perform forensi
   - **Data Recovery**: Recover lost or deleted files from storage devices.
 
     **Example**:
-```autopsy &
+```bash
+autopsy &
 ```
  ### 4. The Sleuth Kit (TSK)
 - **Description**: The Sleuth Kit is a suite of command-line tools for digital forensics that enables analysis of disk images and file systems. It supports multiple file systems and is ideal for metadata extraction and data recovery tasks.
@@ -221,7 +222,8 @@ Whether you're looking for tools to strengthen network security, perform forensi
   - **Timeline Analysis**: Create chronological timelines of system and file activity.
 
     **Example**:
-    ```fls -r -o 63 disk_image.dd > output.txt
+    ```bash
+    fls -r -o 63 disk_image.dd > output.txt
     ```
   ### 5. [Volatility](https://github.com/volatilityfoundation/volatility)
 - **Description**: Volatility is a leading memory forensics framework used to extract digital artifacts from RAM dumps. It helps investigators analyze system memory to uncover evidence of malware, unauthorized access, and other security incidents. Volatility supports a wide range of memory image formats and is essential for conducting thorough digital forensic investigations.
