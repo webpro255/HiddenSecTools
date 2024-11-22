@@ -214,6 +214,7 @@ Whether you're looking for tools to strengthen network security, perform forensi
 ```bash
 autopsy &
 ```
+This launches the Autopsy web-based GUI, where you can create cases and add evidence for analysis.
  ### 4. The Sleuth Kit (TSK)
 - **Description**: The Sleuth Kit is a suite of command-line tools for digital forensics that enables analysis of disk images and file systems. It supports multiple file systems and is ideal for metadata extraction and data recovery tasks.
 - **Use Cases**:
@@ -225,6 +226,7 @@ autopsy &
     ```bash
     fls -r -o 63 disk_image.dd > output.txt
     ```
+    This command lists files and directories from the disk image disk_image.dd, starting at offset 63, and saves the results in output.txt.
   ### 5. [Volatility](https://github.com/volatilityfoundation/volatility)
 - **Description**: Volatility is a leading memory forensics framework used to extract digital artifacts from RAM dumps. It helps investigators analyze system memory to uncover evidence of malware, unauthorized access, and other security incidents. Volatility supports a wide range of memory image formats and is essential for conducting thorough digital forensic investigations.
 - **Use Cases**:
@@ -241,8 +243,10 @@ autopsy &
 - **Data Recovery**: Recover deleted or lost files from drives or disk images.
 - **Evidence Validation**: Generate and verify MD5 and SHA-1 hash values for evidentiary integrity.
     **Example**:
-  ```./ftkimager source_drive destination_image.E01```
-
+  ```bash
+  ./ftkimager source_drive destination_image.E01
+  ```
+This command creates a forensic image of the source_drive and saves it as destination_image.E01 while maintaining evidentiary integrity.
 ### Vulnerability Scanning
 ### 1. [GoPhish](https://github.com/gophish/gophish)
 - **Description**: GoPhish is an open-source phishing toolkit designed to make the process of running phishing campaigns simple and effective. It is ideal for both small and large organizations looking to test their employees’ security awareness and improve their phishing detection capabilities.
